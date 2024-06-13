@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pc,
+        .tablet,
+        .mobile {
+            font-size: 70px;
+            text-align: center;
+            display: none;
+        }
+
+        /* Break point (điểm chuyển giữa PC, TABLE và MOBILE) */
+
+        /* PC */
+        @media (min-width: 1024px){
+            .pc {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 740px) and (max-width: 1023px) {
+            .tablet {
+                display: block;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 740px){
+            .mobile {
+                display: block;
+            }
+        }
+
+        /* 
+            PC: >= 1024px
+            TABLE: >=740px & <1024px
+            MOBILE: <740px
+        */
+
+
+    </style>
+
+
+</head>
+<body>
+    <h2 class="pc">PC</h2>
+    <h2 class="tablet">TABLE</h2>
+    <h2 class="mobile">MOBILE</h2>
+</body>
+</html>
